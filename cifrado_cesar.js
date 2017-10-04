@@ -1,16 +1,16 @@
 function principal2(option){
 	do{
-		var option = prompt("Indique que desea hacer: 1)Cifrar - 2)Descifrar");
-		if(option != ""){
+		var option = prompt("Indique que desea hacer: 1)Cifrar - 2)Descifrar"); // elegir tu opción
+		if(option != ""){ // verifica que el usuario haya ingresado datos
 			if(option == "1") {
-				cipher2();
+				cipher2(); // llama a la función que cifra el string
 			} else if (option == "2") {
-				decipher();
+				decipher(); // llama a la función que descifra el string
 			} else {
-				alert("Ingrese una opción válida");
+				alert("Ingrese una opción válida"); //
 			}
 		}
-	} while (option == "" || (option != "1" && option != "2"));
+	} while (option == "" || (option != "1" && option != "2")); // espera los datos y los restringue 1 o 2.
 }
 
 /*
@@ -59,7 +59,7 @@ function filterEven(arreglo){
 }
 
 */
-
+/*
 function cipher2(){// función de prueba
 	do{
 		var str= prompt("Ingrese phrase a traducir");
@@ -95,7 +95,28 @@ function cipher2(){// función de prueba
 	} while (phrase == "");
 
 }
+*/
+
+function cipher2(){// función de prueba para cifrado
+	do{
+		var str= prompt("Ingrese phrase a traducir");
+
+		if( str != "" ){
+
+			var pCesar = []; // array vacío
+			var codeAs = str.charCodeAt(i); // traduce a valor de código ASCII
+			
+			
+
+			return pCesar;
+
+		} else {
+			alert("Ingrese solo letras");
+		}
+
+	} while (phrase == "");
+
+}
 
 
-
-principal2();
+principal2(); // ver resultado
